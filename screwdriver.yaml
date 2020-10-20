@@ -2,6 +2,6 @@ jobs:
     main:
         image: node:12
         requires: [~pr, ~commit]
-        sourcePaths: ["screwdriver.yaml", "dir/", "!dir/exclude.txt"]
+        sourcePaths: ["!dir/exclude.txt"]
         steps:
             - echo: echo hi
